@@ -1365,11 +1365,13 @@ body.dialogo-abierto {
   *::before,
   *::after {
     animation-duration: 0.001ms !important;
+    animation-delay: 0ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
   }
 
   .tier {
+    animation: none !important;
     opacity: 1;
     transform: none;
   }
