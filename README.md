@@ -2,6 +2,8 @@
 
 Guía interactiva en español sobre la jerarquía de necesidades de Abraham Maslow. Cada nivel de la pirámide abre una ficha con qué incluye, por qué importa, qué pasa cuando falta y un video explicativo.
 
+![Vista previa de la guía interactiva](assets/img/og.png)
+
 Sitio estático: HTML, CSS y JavaScript, sin dependencias ni build.
 
 ## Ver el sitio
