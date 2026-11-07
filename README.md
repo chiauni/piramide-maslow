@@ -1,6 +1,6 @@
 # Pirámide de Maslow, piso por piso
 
-Guía interactiva en español sobre la jerarquía de necesidades de Abraham Maslow. Cada nivel de la pirámide abre una ficha con qué incluye, por qué importa, qué pasa cuando falta y un video explicativo.
+Guía interactiva en español sobre la jerarquía de necesidades de Abraham Maslow, hecha como trabajo de 1.º de Administración de la UTU Flor de Maroñas. Cada nivel de la pirámide abre una ficha con qué incluye, por qué importa, qué pasa cuando falta y un video explicativo. Además incluye un juego de presupuesto: hay que repartir $25.000 entre gastos de un mes y ver qué pasa.
 
 ![Vista previa de la guía interactiva](assets/img/og.png)
 
@@ -53,6 +53,23 @@ En el mismo archivo `assets/js/niveles.js` podés cambiar:
 
 Los nombres visibles en la pirámide están en `index.html`, dentro de `.pyramid`. Si cambiás un nombre en un archivo, actualizalo también en el otro.
 
+## El juego del presupuesto
+
+El juego propone repartir $25.000 entre trece gastos de un mes, agrupados por nivel de la pirámide. Al cerrar el mes calcula un puntaje de 0 a 100 según la cobertura de cada nivel, suma un imprevisto de $1.800 y devuelve consejos sobre las decisiones tomadas.
+
+Los datos están en `assets/js/juego.js`:
+
+| Constante | Para qué sirve |
+| --- | --- |
+| `PRESUPUESTO` | Dinero disponible para repartir |
+| `IMPREVISTO` | Costo del imprevisto que se descuenta al cerrar el mes |
+| `NIVELES` | Nombre, color y peso de cada nivel en el puntaje |
+| `GASTOS` | Lista de gastos con su nivel y monto sugerido |
+
+Para agregar un gasto, sumá un objeto a `GASTOS` con un `id` nuevo, el `nivel` al que pertenece y un `sugerido` en pesos. La interfaz se genera sola. Si el total sugerido cambia mucho, revisá que el presupuesto siga siendo un desafío.
+
+Los montos son ficticios y están pensados como ejemplo didáctico, no como un presupuesto real.
+
 ## Estructura
 
 ```
@@ -62,6 +79,7 @@ piramide-maslow/
 │   ├── css/styles.css
 │   ├── js/niveles.js
 │   ├── js/app.js
+│   ├── js/juego.js
 │   └── img/favicon.svg
 ├── README.md
 └── .gitignore
@@ -83,6 +101,7 @@ GitHub Pages vuelve a publicar solo en uno o dos minutos.
 
 - Navegación completa con teclado: los niveles son botones, el diálogo usa `<dialog>` nativo y se cierra con `Escape`.
 - Flechas izquierda y derecha para pasar de nivel dentro de la ficha.
+- El juego usa controles de rango con etiqueta, monto en texto y aviso del dinero disponible.
 - Foco visible en todos los controles y retorno del foco al cerrar.
 - Textos con contraste AA sobre cada color de la pirámide.
 - Respeta `prefers-reduced-motion`.

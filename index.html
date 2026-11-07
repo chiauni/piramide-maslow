@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pirámide de Maslow, piso por piso · Guía interactiva</title>
-  <meta name="description" content="Una guía interactiva de la pirámide de Maslow: los cinco niveles de necesidades humanas, qué incluye cada uno, qué pasa cuando falta y un video explicativo en español.">
+  <title>Pirámide de Maslow y juego de presupuesto · UTU Flor de Maroñas</title>
+  <meta name="description" content="Guía interactiva de la pirámide de Maslow y juego de presupuesto: los cinco niveles, videos en español y $25.000 para repartir en un mes.">
   <meta name="theme-color" content="#E9EDE5">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Pirámide de Maslow, piso por piso">
-  <meta property="og:description" content="Tocá cada nivel para ver qué incluye, por qué importa y un video que lo explica.">
+  <meta property="og:title" content="Pirámide de Maslow y juego de presupuesto">
+  <meta property="og:description" content="Tocá cada nivel para ver qué incluye y jugá a repartir $25.000 en un mes.">
   <meta property="og:locale" content="es_UY">
   <meta property="og:url" content="https://chiauni.github.io/piramide-maslow/">
   <meta property="og:image" content="https://chiauni.github.io/piramide-maslow/assets/img/og.png">
@@ -38,6 +38,7 @@
       <span class="brand-text">Pirámide de Maslow</span>
     </a>
     <nav class="nav" aria-label="Secciones del sitio">
+      <a href="#juego">El juego</a>
       <a href="#niveles">Los niveles</a>
       <a href="#como">Cómo se lee</a>
       <a href="#precisiones">Precisiones</a>
@@ -48,16 +49,17 @@
   <main id="inicio">
     <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
+        <p class="eyebrow hero-eyebrow">UTU Flor de Maroñas · 1.º de Administración</p>
         <h1 id="hero-title">La pirámide de Maslow, piso por piso.</h1>
-        <p class="lead">Cinco grupos de necesidades que explican buena parte de lo que hacemos cada día. Abrí cada nivel para ver qué incluye, qué pasa cuando falta y un video que lo explica en pocos minutos.</p>
+        <p class="lead">Cinco grupos de necesidades que explican buena parte de lo que hacemos cada día. Abrí cada nivel para ver qué incluye, qué pasa cuando falta y un video que lo explica en pocos minutos. Y al final, un juego: te damos $25.000 para repartir en un mes.</p>
         <div class="hero-actions">
           <button class="btn btn-primary" type="button" data-abrir="1" aria-haspopup="dialog" aria-controls="dialogo-nivel">
             <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 2.6v10.8L13 8 4 2.6Z" fill="currentColor"/></svg>
             Empezar por la base
           </button>
-          <a class="link-underline" href="#precisiones">Qué dice y qué no</a>
+          <a class="link-underline" href="#juego">Jugar con $25.000</a>
         </div>
-        <p class="hero-note">Cinco niveles, con videos en español y sin registro.</p>
+        <p class="hero-note">Cinco niveles, videos en español y un juego de presupuesto. Sin registro.</p>
       </div>
 
       <div class="stage-wrap" id="niveles">
@@ -113,6 +115,64 @@
             <span>5 · La cima</span>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="project wrap" aria-labelledby="proyecto-title">
+      <div class="project-copy">
+        <p class="eyebrow">El trabajo</p>
+        <h2 id="proyecto-title">Esto lo hicimos en primero.</h2>
+        <p>Somos estudiantes de 1.º de Administración de la UTU Flor de Maroñas. Como trabajo del curso nos propusimos explicar la pirámide de Maslow con algo que nos toca de cerca: un sueldo chico, gastos que no esperan y decisiones que se toman con lo que hay.</p>
+        <p>Armamos una guía para recorrer los cinco niveles y un juego para ponerlos a prueba. No hay una respuesta correcta: hay prioridades, renuncias y un presupuesto que casi nunca alcanza.</p>
+      </div>
+      <aside class="project-card" aria-label="Datos del trabajo">
+        <p class="project-stamp" aria-hidden="true">UTU</p>
+        <dl class="project-data">
+          <div><dt>Centro</dt><dd>UTU Flor de Maroñas</dd></div>
+          <div><dt>Curso</dt><dd>1.º de Administración</dd></div>
+          <div><dt>Año</dt><dd>2026</dd></div>
+          <div><dt>Formato</dt><dd>Trabajo de clase</dd></div>
+        </dl>
+        <p class="project-note">Los montos del juego son ficticios y están en pesos uruguayos.</p>
+      </aside>
+    </section>
+
+    <section class="game wrap" id="juego" aria-labelledby="juego-title">
+      <div class="game-head">
+        <div class="game-head-title">
+          <p class="eyebrow">El juego</p>
+          <h2 id="juego-title">Un mes con $25.000.</h2>
+        </div>
+        <div class="game-brief">
+          <p>Es todo el dinero que tenés para el mes. Repartilo entre gastos fijos, comida, vínculos y esas cosas que también te sostienen, y mirá qué pasa cuando no alcanza para todo.</p>
+          <p class="game-brief-note">No hay una distribución perfecta. El objetivo es decidir con criterio y poder explicar por qué.</p>
+        </div>
+      </div>
+
+      <div class="game-shell">
+        <div class="budget" role="group" aria-label="Resumen del presupuesto">
+          <div class="budget-main">
+            <p class="budget-label">Presupuesto del mes</p>
+            <p class="budget-total">$25.000</p>
+          </div>
+          <div class="budget-stats">
+            <p><span>Asignado</span><strong id="juego-asignado">$0</strong></p>
+            <p><span>Sin asignar</span><strong id="juego-restante">$25.000</strong></p>
+          </div>
+          <div class="budget-bar" aria-hidden="true"><span id="juego-barra"></span></div>
+          <button class="budget-save" type="button" id="juego-guardar">Guardar el resto</button>
+        </div>
+
+        <div class="game-groups" id="juego-grupos"></div>
+
+        <div class="game-actions">
+          <button class="btn btn-primary" type="button" id="juego-cerrar">Cerrar el mes</button>
+          <button class="btn btn-ghost" type="button" id="juego-reiniciar">Borrar todo</button>
+          <button class="btn btn-ghost" type="button" id="juego-basico">Cubrir lo básico</button>
+        </div>
+        <p class="game-error" id="juego-error" role="alert" hidden>Asigná al menos una parte del presupuesto antes de cerrar el mes.</p>
+        <p class="sr-only" id="juego-estado" aria-live="polite"></p>
+        <p class="game-foot">Los montos son ficticios. El juego no mide si sos mejor o peor persona: muestra cómo un ingreso fijo obliga a elegir. «Cubrir lo básico» completa los niveles 1 y 2 y deja el resto para que decidas.</p>
       </div>
     </section>
 
@@ -285,7 +345,50 @@
     <p class="sr-only" id="dialogo-anuncio" aria-live="polite"></p>
   </dialog>
 
+  <dialog class="result-dialog" id="dialogo-resultado" aria-labelledby="resultado-titulo">
+    <div class="result-bar">
+      <p class="result-kicker">Resultado del mes</p>
+      <button class="dialog-close" type="button" aria-label="Cerrar el resultado">
+        <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+
+    <div class="result-body">
+      <div class="result-score">
+        <h2 class="result-number" id="resultado-titulo"><span id="resultado-puntaje">0</span><small>/100</small></h2>
+        <p class="result-tag" id="resultado-etiqueta"></p>
+        <p class="result-text" id="resultado-resumen"></p>
+        <p class="result-meta" id="resultado-meta"></p>
+      </div>
+
+      <div class="result-levels" id="resultado-niveles"></div>
+      <p class="result-scale">La base pesa más en el puntaje, pero los cinco niveles cuentan.</p>
+
+      <div class="result-box">
+        <h3>El imprevisto</h3>
+        <p id="resultado-evento"></p>
+      </div>
+
+      <div class="result-box result-box--tips">
+        <h3>Para mirar dos veces</h3>
+        <ul id="resultado-consejos"></ul>
+      </div>
+
+      <div class="result-actions">
+        <button class="btn btn-primary" type="button" id="resultado-reintentar">Volver a repartir</button>
+        <button class="btn btn-ghost" type="button" id="resultado-reiniciar">Empezar de nuevo</button>
+      </div>
+    </div>
+
+    <p class="sr-only" id="resultado-anuncio" aria-live="polite"></p>
+  </dialog>
+
+  <noscript>
+    <p class="wrap game-noscript">El juego necesita JavaScript para funcionar. La guía de los cinco niveles se puede leer igual.</p>
+  </noscript>
+
   <script src="assets/js/niveles.js"></script>
   <script src="assets/js/app.js"></script>
+  <script src="assets/js/juego.js"></script>
 </body>
 </html>
